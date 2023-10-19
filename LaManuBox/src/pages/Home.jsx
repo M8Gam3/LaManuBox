@@ -1,7 +1,7 @@
-﻿export function Home() {
+﻿import Calculator from '../components/Calculator/Calculator'
+
+export default function Home() {
     return (
-        <>
-            <h1> Home </h1>
-        </>
+        <Calculator />
     )
 }

@@ -12,14 +12,14 @@ const router = createBrowserRouter(
       element: <Template />,
       errorElement: <div>404</div>,
       children: [
-        {
-           index: true,
-           element: < Home/>,
-         },
-         {
-           path: '/Product',
-           element: < Product/>,
-         }, 
+          {
+            index: true,
+            element: <Home />,
+          },
+          {
+            path: '/Product',
+            element: < Product/>,
+          }, 
           {
               path: '/Login',
               element: < Login/>,
