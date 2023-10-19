@@ -1,19 +1,23 @@
-import React from "react";
+import './Header.scss';
+
 export default function Header() {
     return (
         <>
-            <div className="header">
-                <img src="" alt="Logo-LaManuBox" />
+            <header>
                 <nav>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <img src="../../assets/img/logo_lamanubox.svg" alt="Logo-LaManuBox" />
+                    <ul>
+                        <li><a className='link link--left' href="#">Boxs</a></li>
+                        <li><a className='link' href="#">Vos mesures</a></li>
+                        <li><a className='link' href="#">S'inscrire</a></li>
+                        <li><a className='link link--right' href="#">Se connecter</a></li>
+                    </ul>
                 </nav>
-            </div>
-            <div className="hero-banner">
-                <h1>LaManuBox</h1>
-                <h2>Phrase d'accroche bien longue et je rajoute des mots car je sais pas quoi mettre à la place</h2>
-            </div>
+                <div className="hero-banner">
+                    <h1>LaManuBox</h1>
+                    <h2>Phrase d'accroche bien longue et je rajoute des mots car je sais pas quoi mettre à la place</h2>
+                </div>
+            </header>
         </>
     )
 }
