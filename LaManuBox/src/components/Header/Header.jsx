@@ -1,11 +1,11 @@
 import './Header.scss';
-
+import logo from '../../assets/img/logo_lamanubox.svg'
 export default function Header() {
     return (
         <>
             <header>
                 <nav>
-                    <img src="../../assets/img/logo_lamanubox.svg" alt="Logo-LaManuBox" />
+                    <img src={logo} alt="Logo-LaManuBox" />
                     <ul>
                         <li><a className='link link--left' href="#">Boxs</a></li>
                         <li><a className='link' href="#">Vos mesures</a></li>
@@ -14,8 +14,13 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className="hero-banner">
-                    <h1>LaManuBox</h1>
-                    <h2>Phrase d'accroche bien longue et je rajoute des mots car je sais pas quoi mettre à la place</h2>
+                    <div className='intro'>
+                        <h1>LaManuBox</h1>
+                        <h2>
+                            Libérez de l'espace, libérez votre vie :<br/>
+                            Découvrez nos boxs de stockage sur mesure pour vos besoins de rangement.
+                        </h2>
+                    </div>
                 </div>
             </header>
         </>
