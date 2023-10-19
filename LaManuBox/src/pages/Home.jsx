@@ -1,10 +1,9 @@
-﻿import Header from "../components/Header";
+﻿import About from "../components/About/About"
 
 export default function Home() {
     return (
         <>
-            <h1> Home </h1>
-            
+            <About/>
         </>
     )
 }
