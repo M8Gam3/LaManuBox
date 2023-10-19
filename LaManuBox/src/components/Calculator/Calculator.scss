@@ -1,0 +1,110 @@
+.calculator {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    &_container {
+        width: 75%;
+    }
+
+
+    &_selector {
+        display: flex;
+
+    }
+    &_item {
+
+        &-img {
+
+            img {
+
+            }
+        }
+        &-name {
+
+        }
+        &-count {
+            display: flex;
+
+        }
+        &-add {
+
+        }
+        &-counter {
+
+        }
+        &-remove {
+
+        }
+    }
+
+
+    &_content {
+
+        &-img {
+
+        }
+        &-infos {
+
+        }
+    }
+
+
+    &_objects {
+
+    }
+    &_object {
+
+        &-name {
+
+        }
+        &-icon {
+
+            img {
+
+            }
+        }
+    }
+
+
+    &_result {
+
+    }
+    &_infos {
+
+        &-result {
+
+            p {
+
+            }
+        }
+        &-reset {
+
+            button {
+
+            }
+        }
+    }
+
+    &_boxs {
+
+        &-infos {
+
+        }
+        &-name {
+
+            p {
+                
+            }
+        }
+        &-desc {
+
+            p {
+
+            }
+        }
+        &-details {
+
+        }
+    }
+}
