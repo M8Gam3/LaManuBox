@@ -1,0 +1,46 @@
+@use '../../Styles/abstract/mixins.scss' as mix;
+@use '../../Styles/abstract/variables.scss' as var;
+
+.call {
+    width: 100%;
+    height: 75vh;
+    // background-color: red;
+
+    &_container {
+        @include mix.dflex(column, space-between, center, wrap, 0);
+        height: 75vh;
+        width: 100%;
+    }
+
+    &_image-1 {
+        width: 100%;
+    }
+
+    &_image-2 {
+        @include mix.dflex(row, flex-end, center, wrap, 0);
+        width: 100%;
+    }
+
+    &_content {
+        width: 50%;
+        @include mix.dflex(row, center, center, wrap, 0);
+        @include mix.setFont(text);
+
+        &_sub {
+            @include mix.dflex(column, space-between, flex-start, wrap, 2rem);
+            width: 50%;
+
+            &-text {
+                width: 30vw;
+            }
+
+            &-btn {
+                @include mix.setFont(text);
+                background-color: map-get($map: var.$colors, $key: 'secondary');
+                cursor: pointer;
+                padding: 1rem;
+                border-radius: 15px;
+            }
+        }
+    }
+}
