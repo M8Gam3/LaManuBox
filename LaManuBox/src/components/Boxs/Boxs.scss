@@ -1,0 +1,38 @@
+@use '../../Styles/abstract/mixins.scss' as mix;
+@use '../../Styles/abstract/variables.scss' as var;
+
+.boxs {
+    // background-color: red;
+    &_container {
+        height: 100vh;
+        width: 100%;
+        @include mix.dflex(column, space-between, center, wrap, 0);
+    }
+
+    &_products {
+        height: 80%;
+        width: 80%;
+        @include mix.dflex(row, space-between, center, wrap, 0);
+
+        @for $i from 1 through 4 {
+            &-#{$i} {
+                font-size: 2rem;
+                @include mix.setcolors(light);
+                @include mix.setFont(text);
+                @include mix.dflex(column, center, center, wrap, 0);
+                background-image: url('../../assets/img/box-#{$i}.png');
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+                height: 100%;
+                width: 20%;
+            }
+        }
+    }
+
+    &_img {
+        height: 20%;
+        width: 100%;
+        @include mix.dflex(row, flex-start, flex-end, wrap, 0)
+    }
+}
