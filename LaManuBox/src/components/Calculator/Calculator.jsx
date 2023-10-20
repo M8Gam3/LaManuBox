@@ -1,3 +1,6 @@
+
+import Croix from '../../assets/img/croix.png'
+
 import {objects, boxs} from './functions'
 import {useState, useEffect} from 'react'
 import './Calculator.scss'
@@ -75,12 +78,13 @@ export default function Calculator() {
                                 <div key={key}className='calculator_item'>
                                     <div className='calculator_item-img'>
                                         <img src={element['img']} alt={element['name']} />
+                                        {/* <img src='https://www.dmax.fr/wp-content/uploads/2020/05/fauteuil-150x150.webp' alt={element['name']} /> */}
                                     </div>
                                     <p className='calculator_item-name'>{element['name']}</p>
                                     <div className='calculator_item-count'>
-                                        <button className='calculator_item-add' onClick={() => removeObjectById(element['id'])}>-</button>
+                                        <button className='calculator_item-add calculator_item-button' onClick={() => removeObjectById(element['id'])}>-</button>
                                         <p className='calculator_item-counter'>{object_count[element['id']]}</p>
-                                        <button className='calculator_item-remove' onClick={() => addObjectById(element['id'])}>+</button>
+                                        <button className='calculator_item-remove calculator_item-button' onClick={() => addObjectById(element['id'])}>+</button>
                                     </div>
                                 </div>
                             )
@@ -91,16 +95,16 @@ export default function Calculator() {
                             <button onClick={() => resetObjectList()}>reset</button>
                             { sBox !== '' ? <p>{sBox['name']}</p> : <></> }
                         </div> */}
-                        <img className='calculator_content-img' src="" alt="" />
+                        <img className='calculator_content-img' src={sBox['img']} alt="" />
                         <div className='calculator_content-infos'>
                             <div className='calculator_objects'>
                                 {
                                     objects_list.map((item, key) => 
                                         <div className='calculator_object' key={key}>
                                             <p className='calculator_object-name'>{item.name}</p>
-                                            <div className='calculator_object-icon'>
-                                                <img src="" alt="" />
-                                            </div>
+                                            <button className='calculator_object-icon' onClick={() => removeObjectById(item['id'])}>
+                                                <img src={Croix} alt="" />
+                                            </button>
                                         </div>
                                     )
                                 }
@@ -108,7 +112,7 @@ export default function Calculator() {
                             <div className='calculator_result'>
                                 <div className='calculator_infos'>
                                     <div className='calculator_infos-result'>
-                                        <p>{result}</p>
+                                        <p>{result}m²</p>
                                     </div>
                                     <div className='calculator_infos-reset'>
                                         <button onClick={() => resetObjectList()}>Reset</button>
@@ -117,7 +121,7 @@ export default function Calculator() {
                                 <button className='calculator_boxs'>
                                     <div className='calculator_boxs-infos'>
                                         <div className='calculator_boxs-name'>
-                                            <p>Boxes {sBox.name}</p>
+                                            <p>Boxes {sBox.name} ({sBox.cubic}m²), {sBox.price}€/mois</p>
                                         </div>
                                         <div className='calculator_boxs-desc'>
                                             <p>Cette boxe est la plus adaptée pour ranger vos objets</p>
