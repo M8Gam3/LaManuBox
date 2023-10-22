@@ -25,12 +25,16 @@ export default function Footer() {
                     </div>
                     <div className='footer_container_section'>
                         <h3 className='footer_container_section_title'>Tarif</h3>
-                        <button className='footer_container_section_btn'>Voir les tarifs</button>
+                        <button className='footer_container_section_btn' href="#">
+                            <a className="footer_container_section_btn-link" href='#'>Voir les tarifs</a>
+                        </button>
                         <h3 className='footer_container_section_title'>Mesure pour votre box idéale</h3>
-                        <button className='footer_container_section_btn'>Mesurer votre taille de stock</button>
+                        <button className='footer_container_section_btn'>
+                            <a className='footer_container_section_btn-link' href="#">Mesurer votre taille de stock</a>
+                        </button>
                     </div>
                 </div>
-                <p className='footer_copyright'>Copyright Lamanu 2023 - Mentions légales</p>
+                <p className='footer_copyright'>Copyright Lamanubox 2023 - Mentions légales</p>
             </footer>
         </>
     )
