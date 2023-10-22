@@ -1,7 +1,9 @@
-﻿export function Product() {
+﻿import Products from "../components/Product/Products";
+
+export function Product() {
     return (
         <>
-            <h1> Product </h1>
+            <Products/>
         </>
     )
 }
