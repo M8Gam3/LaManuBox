@@ -10,11 +10,10 @@
 
 @mixin setcolors ($color)
 {
-    color: map.get($colors, $color);
+    color: map-get($map: v.$colors, $key: $color);
 }
 
 @mixin setFont($font)
 {
-    font-family: map.get($typos, $font);
+    font-family: map-get($map: v.$typos, $key: $font)
 }
-
