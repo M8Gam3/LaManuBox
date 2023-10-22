@@ -1,5 +1,5 @@
 import './Boxs.scss'
-import scrap_paper3 from '../../assets/img/scrap_paper3.svg'
+// import scrap_paper3 from '../../assets/img/scrap_paper3.svg'
 
 export default function Boxs() {
     return (
@@ -20,9 +20,9 @@ export default function Boxs() {
                             <p className='boxs_products_title'>BOX 4</p>
                         </div>
                     </div>
-                    <div className='boxs_img'>
+                    {/* <div className='boxs_img'>
                         <img src={scrap_paper3} alt="scrap-paper-3" />
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>
