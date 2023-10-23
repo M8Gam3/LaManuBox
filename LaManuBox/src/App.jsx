@@ -4,9 +4,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 // import Product from "./pages/Product";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from "./pages/Home";
 import Product from "./pages/Product";
-import Login from "./pages/Login";
 
 const router = createBrowserRouter(
   [
