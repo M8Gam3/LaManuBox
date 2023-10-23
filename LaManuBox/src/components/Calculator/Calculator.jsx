@@ -118,19 +118,21 @@ export default function Calculator() {
                                         <button onClick={() => resetObjectList()}>Reset</button>
                                     </div>
                                 </div>
-                                <button className='calculator_boxs'>
-                                    <div className='calculator_boxs-infos'>
-                                        <div className='calculator_boxs-name'>
-                                            <p>Boxes {sBox.name} ({sBox.cubic}m²), {sBox.price}€/mois</p>
+                                <a href={'/Product?id=' + sBox.id}>
+                                    <button className='calculator_boxs'>
+                                        <div className='calculator_boxs-infos'>
+                                            <div className='calculator_boxs-name'>
+                                                <p>Boxes {sBox.name} ({sBox.cubic}m²), {sBox.price}€/mois</p>
+                                            </div>
+                                            <div className='calculator_boxs-desc'>
+                                                <p>Cette boxe est la plus adaptée pour ranger vos objets</p>
+                                            </div>
                                         </div>
-                                        <div className='calculator_boxs-desc'>
-                                            <p>Cette boxe est la plus adaptée pour ranger vos objets</p>
+                                        <div className='calculator_boxs-details'>
+                                            <img src="" alt="" />
                                         </div>
-                                    </div>
-                                    <div className='calculator_boxs-details'>
-                                        <img src="" alt="" />
-                                    </div>
-                                </button>
+                                    </button>
+                                </a>
                             </div> 
                         </div>
                     </div>

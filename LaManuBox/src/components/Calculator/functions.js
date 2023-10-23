@@ -110,6 +110,7 @@ const objects = [
 
 const boxs = [
     {
+        id: 0,
         name: "S",
         height: 2.5,
         squareMax: 3,
@@ -117,7 +118,8 @@ const boxs = [
         price: 50,
         img: boxS,
     },
-    {
+    {   
+        id: 1,
         name: "M",
         height: 2.5,
         squareMax: 6,
@@ -125,7 +127,8 @@ const boxs = [
         price: 80,
         img: boxM,
     },
-    {
+    {   
+        id: 2,
         name: "L",
         height: 2.5,
         squareMax: 10,
@@ -133,7 +136,8 @@ const boxs = [
         price: 140,
         img: boxL,
     },
-    {
+    {   
+        id: 3,
         name: "XL",
         height: 2.5,
         squareMax: 16,
