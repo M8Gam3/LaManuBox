@@ -26,19 +26,15 @@ export default function Products() {
                     {/* <img src={scrap_paper5} alt="scrap paper" /> */}
                     <div className="article__container__box">
                         <div className='article__container--img'>
-                            <img src={img_product} alt="imageproduct" />
+                            <img className="article__container--img--1" src={img_product} alt="imageproduct" />
                         </div>
                         <div className='article__container__desc'>
                             <div className='article__container__content'>
                                 <h3 className='article__container__title'>Box S</h3>
-                                {/* <div className='line'>
-                            </div> */}
                                 <p className='article__container__text'>50€ HT / mois</p>
                             </div>
                             <div className='article__container__content'>
                                 <h3 className='article__container__title'>Description</h3>
-                                {/* <div className='line'>
-                            </div> */}
                                 <p className='article__container__text'>
                                     Un box idéale pour pouvoir ranger votre matériel comme des outils,<br />
                                     des tableaux ou même des petits meuble en trop chez vous
@@ -46,13 +42,11 @@ export default function Products() {
                             </div>
                             <div className='article__container__content'>
                                 <h3 className='article__container__title'>Dimension</h3>
-                                {/* <div className='line'>
-                            </div> */}
                                 <p className='article__container__text'>-Largeur : 2²</p>
                                 <p className='article__container__text'>-Longueur : 2²</p>
                                 <p className='article__container__text'>-Hauteur : 2²</p>
                                 <p className='article__container__text'>-Volume : 2²</p>
-                                <button className='article__container--btn'><a className='article__container--link' href="#">Acheter</a></button>
+                                <button className='article__container--btn'><a className='article__container--link' href="#">Réserver la box</a></button>
                             </div>
                         </div>
                     </div>
