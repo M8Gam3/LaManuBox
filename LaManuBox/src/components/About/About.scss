@@ -1,0 +1,54 @@
+@use '../../Styles/abstract/mixins.scss' as mix;
+@use '../../Styles/abstract/variables.scss' as var;
+
+.about {
+    width: 100%;
+    height: 100vh;
+    &_container {
+        width: 100%;
+        @include mix.dflex(row, space-between, none, wrap, 0);
+    }
+
+    &_image {
+        background-color: red;
+
+        &-1 {
+            height: 100vh;
+            // background-color: red;
+            @include mix.dflex(row, space-between, flex-start, wrap, 0);
+        }
+
+        &-2 {
+            height: 100vh;
+            // background-color: red;
+            @include mix.dflex(row, space-between, flex-end, wrap, 0);
+        }
+    }
+
+    &_story {
+        height: 100vh;
+        width: 65%;
+        @include mix.dflex(row, space-between, center, wrap, 0);
+
+        &-content {
+            @include mix.dflex(column, none, none, wrap, 2rem);
+            width: 60%;
+        }
+
+        &-title {
+            width: 100%;
+            font-size: 1.6rem;
+            @include mix.setFont(title);
+            font-weight: bold;
+        }
+        &-text {
+            font-size: 1.2rem;
+            @include mix.setFont(text);
+            width: 90%;
+        }
+        // &-img {
+        //     margin-top: 20vh;
+        // }
+    }
+
+}
