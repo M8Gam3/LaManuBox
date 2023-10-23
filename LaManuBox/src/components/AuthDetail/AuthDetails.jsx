@@ -32,11 +32,11 @@ export default function AuthDetails () {
     <div>
       {authUser ? (
         <>
-          <p>{`Signed In as ${authUser.email}`}</p>
-          <button onClick={userSignOut}>Sign Out</button>
+          <p>{`Bonjour ${authUser.email}`}</p>
+          <button onClick={userSignOut}>Se déconecter</button>
         </>
       ) : (
-        <p>Signed Out</p>
+        <p> </p>
       )}
     </div>
   );

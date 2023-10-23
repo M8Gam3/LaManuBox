@@ -23,7 +23,6 @@ export default function Register() {
 
       <>
             <NavBar />
-            <AuthDetails />
             <SingUp />
       </>
     )

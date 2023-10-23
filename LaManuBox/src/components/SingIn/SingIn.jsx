@@ -36,7 +36,7 @@ export default function SingIn () {
                     </div>  
                     <div className='form__connexion--password'>
                         <label className='connexion__label' htmlFor="connexion__label"> Mot de passe </label>
-                        <input className='input__email' id='connexion__label' type="text" placeholder='Mot de passe'
+                        <input className='input__email' id='connexion__label' type="password" placeholder='Mot de passe'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         />

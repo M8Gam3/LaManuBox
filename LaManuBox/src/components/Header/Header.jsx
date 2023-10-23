@@ -1,4 +1,5 @@
 import logo from '../../assets/img/logo_lamanubox.svg'
+import AuthDetails from '../AuthDetail/AuthDetails';
 import './Header.scss';
 
 export default function Header() {
@@ -14,6 +15,7 @@ export default function Header() {
                             <li><a className='link' href="/#calculator">Vos mesures</a></li>
                             <li><a className='link' href="/Register">S'inscrire</a></li>
                             <li><a className='link link--right' href="/Login">Se connecter</a></li>
+                            <AuthDetails></AuthDetails>
                         </ul>
                     </nav>
                     <div className="hero-banner">
