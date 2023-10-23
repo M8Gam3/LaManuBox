@@ -7,7 +7,7 @@ export default function Products() {
   return (
     <>
   
-        <section className='header'>
+        <section id='products' className='header'>
             <div className='navbar'>
                 <div className='navbar__logo'><img src={logoorange} alt="logo orange" /></div>
                 <div>
