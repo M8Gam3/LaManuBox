@@ -3,6 +3,7 @@ import Calltoaction from '../components/Calltoaction/Calltoaction';
 import Boxs from '../components/Boxs/Boxs';
 import Reinsurance from "../components/Reinsurance/Reinsurance";
 import Calculator from '../components/Calculator/Calculator';
+import '../styles/responsive.scss';
 
 export default function Home() {
     return (
