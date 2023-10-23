@@ -3,6 +3,7 @@ import '../styles/layout/login.scss'
 import SingIn from "../components/SingIn/SingIn";
 import SingUp from "../components/SingUp/SingUp";
 import AuthDetails from "../components/AuthDetail/AuthDetails";
+import NavBar from "../components/Nav/NavBar";
 
 export default function Login() {
 
@@ -21,6 +22,7 @@ export default function Login() {
 //     </div>
 
       <>
+            <NavBar />
             <AuthDetails />
             <SingUp />
              <SingIn />

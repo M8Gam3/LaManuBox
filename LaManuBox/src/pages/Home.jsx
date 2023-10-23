@@ -9,7 +9,7 @@ import '../styles/responsive.scss';
 export default function Home() {
     return (
         <>
-            
+            <Header />
             <About/>
             <Calltoaction/>
             <Boxs/>

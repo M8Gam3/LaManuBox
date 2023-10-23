@@ -1,7 +1,7 @@
 @use '../../Styles/abstract/mixins.scss' as mix;
 @use '../../Styles/abstract/variables.scss' as var;
 
-header {
+.header {
     background-image: url('../../assets/img/hero_banner.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,28 +9,6 @@ header {
     height: 100vh;
     @include mix.dflex(column, none, center, wrap, 0);
     @include mix.setcolors(light);
-}
-
-nav {
-    font-size: 1.5rem;
-    border-bottom: 5px solid #fff;
-    width: 75%;
-    padding: 0.5rem;
-    @include mix.dflex(row, space-between, center, wrap, 0);
-    @include mix.setFont(text);
-
-    ul {
-        @include mix.dflex(row, space-between, center, wrap, 2rem);
-    }
-}
-
-.link {
-    @include mix.setcolors(light);
-    transition: 0.3s all ease-in-out;
-}
-
-.link:hover {
-    @include mix.setcolors(primary);
 }
 
 .hero-banner {
