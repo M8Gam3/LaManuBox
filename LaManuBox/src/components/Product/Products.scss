@@ -1,33 +1,32 @@
 @use "../../Styles/abstract/mixins.scss" as mix;
 @use "../../Styles/abstract/variables.scss" as var;
 
-body {
-  margin: 0%;
-  padding: 0%;
-}
+
 a {
   color: white;
 }
+
 .navbar {
   width: 80%;
   height: 8vh;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
   @include mix.dflex(row, space-between, center, wrap, 0);
+
   &__links {
     display: flex;
     flex-direction: row;
     gap: 2vw;
+
     &__a {
       color: white;
     }
   }
+
   &__logo {
     display: flex;
     flex-direction: row;
   }
 }
+
 .header {
   background-color: #ab3f3f;
   display: flex;
@@ -38,17 +37,80 @@ li {
   text-decoration: none;
 }
 
-.product {
-  width: 100vw;
-  @include mix.dflex(column, space-between, center, wrap, 0);
-  &__container {
-    width: 70vw;
-    display: flex;
-    // &__img-product{
+.article {
+  padding: 5rem 0;
 
+  &__container {
+    @include mix.dflex(row, center, center, wrap, 0);
+
+    // &--img {
+    //   background-image: url(../../assets/img/imageproduct.png);
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   height: 100%;
+    //   width: 50%;
     // }
-    // &__desc {
-    //   height: ;
-    // }
+    &__box {
+      @include mix.dflex(row, none, flex-start, wrap, 5rem);
+    }
+
+    &__desc {
+      @include mix.dflex(column, flex-start, flex-start, wrap, 2rem);
+    }
+
+    &__content {
+      @include mix.dflex(column, space-between, flex-start, wrap, 1rem);
+    }
+
+    &__title {
+      @include mix.setFont(title);
+      font-size: 3rem;
+      text-decoration: underline;
+    }
+
+    &__text {
+      @include mix.setFont(text);
+      font-size: 1.2rem;
+    }
+
+    &--btn {
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: map-get($map: var.$colors, $key: secondary);
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .article {
+    // padding: 5rem 0;
+    &__container {
+      &__box {
+        @include mix.dflex(column, space-between, center, wrap, 50px);
+      }
+      &--img {
+        @include mix.dflex(column, center, center, wrap, 0);
+
+        &--1 {
+          width: 75%;
+        }
+      }
+
+      &__desc {
+        width: 75%;
+      }
+      &__title {
+        font-size: 2rem;
+      }
+
+      &__text {
+        font-size: 1rem;
+      }
+      &--btn {
+        width: 75vw;
+      }
+    }
   }
 }
