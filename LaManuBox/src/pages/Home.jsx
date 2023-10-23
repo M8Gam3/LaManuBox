@@ -2,7 +2,7 @@
 import Calltoaction from '../components/Calltoaction/Calltoaction';
 import Boxs from '../components/Boxs/Boxs';
 import Reinsurance from "../components/Reinsurance/Reinsurance";
-import Calculator from '../components/Calculator/index'
+import Calculator from '../components/Calculator/Calculator';
 
 export default function Home() {
     return (
