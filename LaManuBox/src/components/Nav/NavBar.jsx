@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/img/logo-orange.png'
+import logo from '../../assets/img/logo_lamanubox2.svg'
 import './NavBar.scss'
 export default function NavBar() {
   return (
