@@ -1,0 +1,55 @@
+@use '../../Styles/abstract/mixins.scss' as mix;
+@use '../../Styles/abstract/variables.scss' as var;
+
+.footer {
+    @include mix.setcolors(light);
+    @include mix.dflex(column, flex-start, center, wrap, 0);
+    background-color: #282828;
+    height: 80vh;
+    width: 100%;
+    &_container {
+        height: 90%;
+        width: 90%;
+        @include mix.dflex(row, space-between, flex-start, wrap, 5px);
+        &_section {
+            @include mix.dflex(column, center, center, wrap, 25px);
+            height: 100%;
+            width: 30%;
+            text-align: center;
+            &-img {
+                width: 100%;
+                margin-bottom: 10vh;
+            }
+            &-icon {
+                width: 50%;
+                @include mix.dflex(row, space-between, center, wrap, 0);
+                cursor: pointer;
+            }
+            &_title {
+                @include mix.setFont(title);
+                font-size: 3rem;
+            }
+            &_text {
+                @include mix.setFont(text);
+                font-size: 1.5rem;
+            }
+            &_btn {
+                background-color: map-get($map: var.$colors, $key: 'secondary');
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                border-radius: 10px;
+                cursor: pointer;
+                &-link {
+                    @include mix.setcolors(dark);
+                }
+            }
+        }
+    }
+    &_copyright {
+        background-color: map-get($map: var.$colors, $key: 'dark');
+        height: 10%;
+        width: 100%;
+        @include mix.dflex(column, center, center, wrap, 0);
+        @include mix.setFont(text);
+    }
+}
