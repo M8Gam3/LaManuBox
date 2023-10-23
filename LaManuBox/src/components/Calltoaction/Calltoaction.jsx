@@ -25,9 +25,9 @@ export default function Calltoaction() {
                                 Découvrez nos conseils et astuces pour mesurer votre box en toute simplicité,
                                 afin de profiter pleinement de ses avantages.
                             </p>
-                            <button className='call_content_sub-btn'>
+                           <a href="/#calculator">  <button className='call_content_sub-btn'>
                                 Prendre vos mesures
-                            </button>
+                            </button> </a>
                         </div>
                     </div>
                     <div className="call_image-2">
