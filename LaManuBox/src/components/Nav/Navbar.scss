@@ -24,3 +24,10 @@
 .link-2:hover {
     @include mix.setcolors(secondary);
 }
+
+@media sreen and (max-width : 900px) {
+    .nav-bar ul{
+        display: block;
+    }
+
+}

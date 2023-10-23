@@ -1,8 +1,17 @@
 import logo from '../../assets/img/logo_lamanubox.svg'
 import AuthDetails from '../AuthDetail/AuthDetails';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import './Header.scss';
+import { useState } from 'react';
 
 export default function Header() {
+
+    const [isMobileMenuOpen , setisMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () =>{
+        setisMobileMenuOpen(!isMobileMenuOpen)
+
+    }
 
     return (
         <>
@@ -10,13 +19,18 @@ export default function Header() {
                 <div className='header'>
                     <nav>
                         <a href="/"> <img src={logo} alt="Logo-LaManuBox" /> </a>
-                        <ul>
+                        <ul className={`${isMobileMenuOpen ? 'mobile-menu' : ''}`}>
                             <li><a className='link link--left' href="/#Boxs">Boxs</a></li>
                             <li><a className='link' href="/#calculator">Vos mesures</a></li>
-                            <li><a className='link' href="/Register">S'inscrire</a></li>
-                            <li><a className='link link--right' href="/Login">Se connecter</a></li>
+                            <button className='footer_container_section_btn'>
+                            <a className='footer_container_section_btn-link' href="/Register"> Inscription </a>
+                        </button>
+                            <button className='footer_container_section_btn'>
+                            <a className='footer_container_section_btn-link' href="/Login"> Se connecter </a>
+                        </button>
                             <AuthDetails></AuthDetails>
                         </ul>
+                        <BurgerMenu mobileMenu={toggleMobileMenu}></BurgerMenu>
                     </nav>
                     <div className="hero-banner">
                         <div className='intro'>

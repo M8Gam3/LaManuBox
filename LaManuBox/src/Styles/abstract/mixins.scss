@@ -1,7 +1,5 @@
 @use '../abstract/variables.scss' as v;
 
-
-
 @mixin dflex($direction, $justify , $align , $wrap , $gap){
     display: flex;
     flex-flow: $direction $wrap;
@@ -17,5 +15,5 @@
 
 @mixin setFont($font)
 {
-    font-family: map-get($map: v.$typos, $key: $font);
+    font-family: $font;
 }

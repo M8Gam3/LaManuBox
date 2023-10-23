@@ -13,22 +13,22 @@
 .hero-banner {
     width: 75%;
     height: 90vh;
-    @include mix.setFont(title);
+    @include mix.setFont(var.$title);
     @include mix.dflex(column, space-evenly, flex-start, wrap, 0);
 
     h1 {
         font-size: 4rem;
-        @include mix.setFont(title);
+        @include mix.setFont(var.$title);
     }
 
     h2 {
         font-size: 2rem;
-        @include mix.setFont(title);
+        @include mix.setFont(var.$title);
         width: 100%;
     }
     .intro {
         height: 30vh;
-        @include mix.dflex(column, space-between, flex-start, wrap, 0)
+        @include mix.dflex(column, space-around, flex-start, wrap, 0)
     }
 }
 
@@ -38,7 +38,6 @@ nav {
     width: 75%;
     padding: 0.5rem;
     @include mix.dflex(row, space-between, center, wrap, 0);
-    @include mix.setFont(text);
     
 
     ul {
@@ -53,4 +52,54 @@ nav {
 
 .link:hover {
     @include mix.setcolors(primary);
+}
+
+
+@media screen and (max-width : 900px) {
+    nav{
+        width: 90%;
+    }
+
+    nav ul{
+        width: 0%;
+        height: 100%;
+        position: fixed;
+        background-color: #AB3F3F;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.mobile-menu{
+       width: 50%;
+    }
+
+    nav li {
+        font-size: 2rem;
+    }
+
+    .link:hover {
+        color: white;
+    }
+
+    .intro{
+        text-align: center;
+
+        & h1{
+            width: 100%;
+        }
+    }
+
+    .hero-banner{
+        width: 100%;
+    }
+
+    .hero-banner h2{
+        font-size: 1.5rem;
+    }
 }

@@ -1,5 +1,5 @@
-@use '../../Styles/abstract/mixins.scss' as mix;
-@use '../../Styles/abstract/variables.scss' as var;
+@use '../../styles/abstract/mixins.scss' as mix;
+@use '../../styles/abstract/variables.scss' as var;
 
 .footer {
     @include mix.setcolors(light);
@@ -27,11 +27,11 @@
                 cursor: pointer;
             }
             &_title {
-                @include mix.setFont(title);
+                @include mix.setFont(var.$title);
                 font-size: 1.3rem;
             }
             &_text {
-                @include mix.setFont(text);
+                @include mix.setFont(var.$text);
                 font-size: 1.3rem;
             }
             &_btn {
@@ -51,6 +51,6 @@
         height: 10%;
         width: 100%;
         @include mix.dflex(column, center, center, wrap, 0);
-        @include mix.setFont(text);
+        @include mix.setFont(var.$text);
     }
 }

@@ -7,11 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/LaManuBox/src/assets/img/hero_banner.png);
     
 }
 
 .form__connexion{
-    width: 25%;
+    width: 30%;
     height: 60vh;
     background-color: map-get($map: v.$colors, $key: 'primary');
 
@@ -101,7 +102,14 @@
 }
 
 
+@media screen and (max-width: 900px) {
+    .form__connexion{
+        width: 80%;
+    }
 
+
+
+}
 
 
 

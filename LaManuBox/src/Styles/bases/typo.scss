@@ -1,9 +1,11 @@
+@use '../abstract/variables.scss' as v;
+
 @font-face {
-    font-family: "Raleway";
+    font-family: v.$text;
     src: url('../../assets/typographies/Raleway-Black.ttf');
 }
 
 @font-face {
-    font-family: "Mukta";
+    font-family: v.$title;
     src: url('../../assets/typographies/Mukta-Regular.ttf');
 }
