@@ -42,7 +42,7 @@ export default function SingIn () {
                         />
                     </div> 
                     <div className='form__connexion--rappel'>
-                      <p> Si vous n’avez pas de compte <a href="/"> Inscrivez-vous </a> </p>
+                      <p> Si vous n’avez pas de compte <a href="/Register"> Inscrivez-vous </a> </p>
                     </div>
                   </div>
 
