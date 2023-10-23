@@ -17,5 +17,5 @@
 
 @mixin setFont($font)
 {
-    font-family: map.get($map: v.$typos, $key: $font);
+    font-family: map-get($map: v.$typos, $key: $font);
 }

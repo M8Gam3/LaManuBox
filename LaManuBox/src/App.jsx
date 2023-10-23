@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "./Template";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Login from "./pages/Login.jsx";
 // import Product from "./pages/Product";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Product from "./pages/Product";

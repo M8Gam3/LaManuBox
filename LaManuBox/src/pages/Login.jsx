@@ -5,7 +5,7 @@ import SingIn from "../components/SingIn/SingIn";
 import SingUp from "../components/SingUp/SingUp";
 import AuthDetails from "../components/AuthDetail/AuthDetails";
 
-export function Login() {
+export default function Login() {
 
       const [active , setActive] = useState(false);
 
