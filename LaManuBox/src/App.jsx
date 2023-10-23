@@ -1,5 +1,8 @@
 import React from "react";
 import Template from "./Template";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+// import Product from "./pages/Product";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -12,14 +15,14 @@ const router = createBrowserRouter(
       element: <Template />,
       errorElement: <div>404</div>,
       children: [
-        {
-           index: true,
-           element: < Home/>,
-         },
-         {
-           path: '/Product',
-           element: < Product/>,
-         }, 
+          {
+            index: true,
+            element: < Home/>,
+          },
+          {
+            path: '/Product',
+            element: < Product/>,
+          }, 
           {
               path: '/Login',
               element: < Login/>,
