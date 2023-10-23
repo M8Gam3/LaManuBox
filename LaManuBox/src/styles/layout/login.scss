@@ -1,0 +1,108 @@
+@use '../abstract/variables.scss' as v;
+@use '../abstract/mixins.scss' as m;
+
+.connexion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form__connexion{
+    width: 25%;
+    height: 60vh;
+    background-color: map-get($map: v.$colors, $key: 'primary');
+
+    &--title{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: white;
+    }
+
+    &--content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        
+    }
+
+    .input__email{
+        width: 100%;
+        height: 4vh;
+        color: white;
+        background-color: transparent;
+        border: 1.8px solid white;
+
+        &::placeholder{
+            color: white;
+        }
+    }
+
+    .connexion__label{
+        width: 100%;
+        height: 3vh;
+        color: white;
+    }
+    &--email{
+        width: 60%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        
+    }
+
+
+    &--password{
+        width: 60%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &--rappel{
+        padding-left: 8px;
+        padding-top: 15px;
+        font-size: 15px;
+        color: white;
+
+    }
+
+    .button__connexion--content{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--item{
+            cursor: pointer;
+            width: 35%;
+            height: 5vh;
+            border-radius: 10px;
+            color: white;
+            background-color: map-get($map: v.$colors, $key: 'secondary');
+        }
+    }
+
+}
+
+
+
+
+
+
+
