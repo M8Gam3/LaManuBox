@@ -17,8 +17,8 @@
             width: 30%;
             text-align: center;
             &-img {
-                width: 100%;
-                margin-bottom: 10vh;
+                width: 70%;
+                
             }
             &-icon {
                 width: 50%;
@@ -27,15 +27,15 @@
             }
             &_title {
                 @include mix.setFont(title);
-                font-size: 3rem;
+                font-size: 1rem;
             }
             &_text {
                 @include mix.setFont(text);
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
             &_btn {
                 background-color: map-get($map: var.$colors, $key: 'secondary');
-                font-size: 1.5rem;
+                font-size: 1rem;
                 padding: 0.5rem;
                 border-radius: 10px;
                 cursor: pointer;

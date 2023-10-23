@@ -55,6 +55,7 @@
     
     .about_story{
         height: auto;
+        justify-content: center;
     }
 
     .call{
@@ -107,5 +108,40 @@
     .reinsurance_object{
         flex-flow: row nowrap;
         gap: 0;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .footer_container{
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    
+    .footer_container_section{
+        width: auto;
+    }
+
+    .footer_container_section-img{
+       margin: 0;
+       padding: 1rem 0;
+    }
+
+    .footer_container_section-icon{
+        width: 100%;
+    }
+
+    .footer_container_section_title{
+        font-size: 1rem;
+    }
+
+    .footer_container_section_text{
+        font-size: 1rem;
+    }
+
+    .footer_container_section_btn{
+        font-size: 1rem;
     }
 }
