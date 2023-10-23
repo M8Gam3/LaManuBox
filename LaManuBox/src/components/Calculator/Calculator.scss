@@ -63,15 +63,10 @@
             border: 0;
             margin: 0 0.2rem;
         }
-        &-add {
 
-        }
         &-counter {
             margin: 0;
             font-size: 1.5rem;
-        }
-        &-remove {
-
         }
     }
 
@@ -135,9 +130,6 @@
         &-icon {
             height: 1rem;
             width: 1rem;
-            img {
-                
-            }
         }
     }
 
@@ -194,25 +186,11 @@
         }
         &-name {
             text-align: start;
-            p {
-                
-            }
         }
         &-desc {
             text-align: start;
-            p {
-
-            }
-        }
-        &-details {
-
-        }
     }
 }
-
-
-
-
 
 
 /* width */
@@ -237,3 +215,4 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #AB3F3F; 
   }
+}

@@ -2,37 +2,72 @@
 @use '../../Styles/abstract/variables.scss' as var;
 
 .boxs {
-    // background-color: red;
-    &_container {
-        height: 100vh;
+    &_section {
         width: 100%;
-        @include mix.dflex(column, space-between, center, wrap, 0);
+        padding: 5rem 0;
     }
-
+    &_container {
+        width: 100%;
+        height: 70vh;
+    }
     &_products {
-        height: 80%;
-        width: 80%;
-        @include mix.dflex(row, space-between, center, wrap, 0);
-
-        @for $i from 1 through 4 {
-            &-#{$i} {
+        height: 100%;
+        display: flex;
+        gap: 1rem;
+        padding: 0 2rem;
+        &_title {
+            display: flex;
+            height: 90%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            h3 {
                 font-size: 2rem;
-                @include mix.setcolors(light);
-                @include mix.setFont(text);
-                @include mix.dflex(column, center, center, wrap, 0);
-                background-image: url('../../assets/img/box-#{$i}.png');
-                background-repeat: no-repeat;
-                background-size: auto;
-                background-position: center;
-                height: 100%;
-                width: 20%;
+            }
+        }
+        &_subtitle {
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: flex-end;
+            p {
+                font-size: 1rem;
+                padding: 0 1rem;
             }
         }
     }
-
-    &_img {
-        height: 20%;
+    &_product {
         width: 100%;
-        @include mix.dflex(row, flex-start, flex-end, wrap, 0)
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00000000;
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 through 4 {
+            &-#{$i} {
+                @include mix.setcolors(light);
+                @include mix.setFont(text);
+                background-image: url('../../assets/img/box-#{$i}.png');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 800px) {
+    .boxs {
+        &_products {
+            flex-wrap: wrap;
+            gap: 0;
+            padding: 0;
+        }
+        &_product {
+            width: 50%;
+            height: 50%;
+        }
     }
 }
