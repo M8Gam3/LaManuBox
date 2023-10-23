@@ -1,15 +1,13 @@
 import React from 'react'
-import logo from '../../assets/img/logo_lamanubox.svg'
+import logo from '../../assets/img/logo-orange.png'
 import './NavBar.scss'
 export default function NavBar() {
   return (
-    <nav>
-      <img src={logo} alt="Logo-LaManuBox" />
+    <nav className='nav-bar'>
+       <a href="/"> <img src={logo} alt="Logo-LaManuBox" /> </a>
       <ul>
-          <li><a className='link link--left' href="#">Boxs</a></li>
-          <li><a className='link' href="#">Vos mesures</a></li>
-          <li><a className='link' href="#">S'inscrire</a></li>
-          <li><a className='link link--right' href="/Login">Se connecter</a></li>
+          <li><a className='link-2' href="/Register">S'inscrire</a></li>
+          <li><a className='link-2 link--right' href="/Login">Se connecter</a></li>
       </ul>
     </nav>
   )

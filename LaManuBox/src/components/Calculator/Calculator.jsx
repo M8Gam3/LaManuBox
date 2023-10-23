@@ -68,7 +68,7 @@ export default function Calculator() {
     
     return (
         <>
-            <section className='calculator'>
+            <section id='calculator' className='calculator'>
 
                 <div className='calculator_container'>
 

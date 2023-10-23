@@ -1,5 +1,5 @@
+import logo from '../../assets/img/logo_lamanubox.svg'
 import './Header.scss';
-import NavBar from '../Nav/NavBar';
 
 export default function Header() {
 
@@ -7,7 +7,15 @@ export default function Header() {
         <>
             <header>
                 <div className='header'>
-                    <NavBar />
+                    <nav>
+                        <a href="/"> <img src={logo} alt="Logo-LaManuBox" /> </a>
+                        <ul>
+                            <li><a className='link link--left' href="/#Boxs">Boxs</a></li>
+                            <li><a className='link' href="/#calculator">Vos mesures</a></li>
+                            <li><a className='link' href="/Register">S'inscrire</a></li>
+                            <li><a className='link link--right' href="/Login">Se connecter</a></li>
+                        </ul>
+                    </nav>
                     <div className="hero-banner">
                         <div className='intro'>
                             <h1>LaManuBox</h1>

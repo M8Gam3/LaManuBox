@@ -1,24 +1,26 @@
 @use '../../Styles/abstract/mixins.scss' as mix;
 @use '../../Styles/abstract/variables.scss' as var;
 
-nav {
+.nav-bar{
     font-size: 1.5rem;
     border-bottom: 5px solid #fff;
-    width: 75%;
+    width: 100%;
     padding: 0.5rem;
     @include mix.dflex(row, space-between, center, wrap, 0);
     @include mix.setFont(text);
+    background-color: #AB3F3F;
 
     ul {
         @include mix.dflex(row, space-between, center, wrap, 2rem);
+        padding: 0 1rem 0 0;
     }
 }
 
-.link {
+.link-2 {
     @include mix.setcolors(light);
     transition: 0.3s all ease-in-out;
 }
 
-.link:hover {
-    @include mix.setcolors(primary);
+.link-2:hover {
+    @include mix.setcolors(secondary);
 }
