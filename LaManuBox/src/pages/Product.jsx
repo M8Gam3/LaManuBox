@@ -1,5 +1,5 @@
 ﻿import Products from "../components/Product/Products";
-// import Box from "../components/Box/Box";
+import Boxs from '../components/Boxs/Boxs'
 
 import NavBar from "../components/Nav/NavBar";
 export default function Product() {
@@ -7,6 +7,7 @@ export default function Product() {
         <>
             <NavBar />
             <Products/>
+            <Boxs />
         </>
     )
 }
