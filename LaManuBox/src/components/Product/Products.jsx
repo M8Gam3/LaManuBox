@@ -40,9 +40,9 @@ export default function Products() {
                                 </div>
                                 <div className='article__container__content'>
                                     <h3 className='article__container__title'>Dimension</h3>
-                                    <p className='article__container__text'>-Surface au sol : {boxInfos.squareMax}²</p>
-                                    <p className='article__container__text'>-Hauteur : {boxInfos.height}²</p>
-                                    <p className='article__container__text'>-Volume : {boxInfos.cubic}3</p>
+                                    <p className='article__container__text'>-Surface au sol : {boxInfos.squareMax}m²</p>
+                                    <p className='article__container__text'>-Hauteur : {boxInfos.height}m²</p>
+                                    <p className='article__container__text'>-Volume : {boxInfos.cubic}m3</p>
                                     <button className='article__container--btn'><a className='article__container--link' href="#">Réserver la box</a></button>
                                 </div>
                             </div>
